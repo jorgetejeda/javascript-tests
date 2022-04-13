@@ -1,4 +1,4 @@
-const findNonDuplicateLetter = require('../exercises/findNonDuplicateLetter.js')
+const findNonDuplicateLetter = require('../exercises/findNonDuplicateLetter')
 
 describe('Create a  function which takes a string and finds first non-repeating character in that string.', () => {
     test('It should return an error if got number', () => {
