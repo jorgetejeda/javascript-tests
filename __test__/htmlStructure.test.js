@@ -12,8 +12,7 @@ describe('Create a function which it takes a html structure and return the first
         expect(expected).toBe(result)
     })
     test('it should return null', () => {
-        const expected = null
         const result = htmlStructure("<div>it Working</div>")
-        expect(expected).toBe(result)
+        expect(result).toBeNull();
     })
 })
