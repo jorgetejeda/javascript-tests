@@ -7,7 +7,7 @@ function flipNumber(number){
 
 
 // Test your code while you're at it!
-// write in the console: node ./exercises/setWinnerCard.js
+// write in the console: node ./exercises/flipNumber.js
 function print(number){
     console.log(flipNumber(number))
 }
