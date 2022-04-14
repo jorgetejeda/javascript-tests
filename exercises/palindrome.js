@@ -4,8 +4,20 @@
 // palindrome('eddfdde') => true
 // palindrome('xlx') => false
 // Read the test to see what the expected output is.
+const reverse = require('./reverse');
 function palindrome(wordOrSentence) {
     // code
+    if(Number(wordOrSentence)) return "this can not be a number"
+
+    if(wordOrSentence == '') return "this can not be empty"
+
+    let wordOrSentenceWithoutSpaces = "";
+    wordOrSentence = wordOrSentence.split(" ");
+    wordOrSentence.forEach((word)=>{
+        wordOrSentenceWithoutSpaces += word;
+    })
+
+    return (wordOrSentenceWithoutSpaces == reverse(wordOrSentenceWithoutSpaces));
 }
 
 
